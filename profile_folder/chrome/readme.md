@@ -1,1 +1,1 @@
-userChrome.JS is from alice0775's uc.JS loader, don't use if using another loader.
+./utils/ has xiaoxiaoflood's uc.JS loader, remove if using another.
