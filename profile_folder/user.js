@@ -10,6 +10,7 @@ user_pref("browser.tabs.loadDivertedInBackground", true);
 user_pref("browser.toolbars.bookmarks.visibility", "never");
 user_pref("browser.uidensity", 1);
 user_pref("devtools.theme", "dark");
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // MS Edge smooth scrolling personality (using msdPhysics) [customized by dst27]
 // https://www.reddit.com/r/firefox/comments/bvfqtp/these_are_the_smooth_scrolling_tweaks_i_play/eppxp4p?context=3
