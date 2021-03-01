@@ -45,6 +45,7 @@ user_pref("browser.sessionstore.restore_on_demand", false); // Modified to false
 user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
 user_pref("browser.startup.preXulSkeletonUI", false);
 user_pref("network.manage-offline-status", false); // Added
+user_pref("gfx.canvas.remote", false); // Added, def = true, reddit.com/r/firefox/comments/lqimww/_/gogpnke/
 
 /****************************************************************************
  * SECTION: SECUREFOX                                                       *
