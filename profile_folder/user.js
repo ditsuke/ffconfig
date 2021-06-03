@@ -11,9 +11,34 @@ user_pref("browser.toolbars.bookmarks.visibility", "never");
 user_pref("browser.uidensity", 1);
 user_pref("devtools.theme", "dark");
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("keyword.enabled", false);
+user_pref("browser.urlbar.showSearchSuggestionsFirst", false);
+user_pref("browser.newtab.extensionControlled", true); // Suppress "{Extension} is Controlling New Tab!" on startup
+user_pref("layout.css.backdrop-filter.enabled", true);
+user_pref("browser.compactmode.show", true);
+user_pref("browser.urlbar.suggest.calculator", true);
+
+/* Censorship Circumvention Measures */
+user_pref("network.trr.mode", 2);                      // def: "5"      // Enable DNS-over-https
+user_pref("network.dns.echconfig.enabled", true);      // def: "false"  // Enable Encrypted Client Hello (ECH) 
+user_pref("network.dns.use_https_rr_as_altsvc", true); // def: "false"  // Use ECH with servers that support it
+
+// Plasma needs this, not sure about Win10
+// user_pref("browser.tabs.drawInTitlebar", true); // (disable for system border control remove integration)
+
+// New tab controlled by Tabbliss // (might not be needed)
+user_pref("browser.newtab.extensionControlled", true);
+
+// For MaterialFox-BigSur
+user_pref("svg.context-properties.content.enabled", true);
+
+// Warn on close [AS TRIAL] [See also below in PESKYFOX (Commented Out Disables)]
+user_pref("browser.sessionstore.warnOnQuit", true);
+user_pref("browser.tabs.warnOnClose", true);
+user_pref("browser.tabs.warnOnCloseOtherTabs", true);
 
 // MS Edge smooth scrolling personality (using msdPhysics) [customized by dst27]
-// https://www.reddit.com/r/firefox/comments/bvfqtp/these_are_the_smooth_scrolling_tweaks_i_play/eppxp4p?context=3
+// reddit.com/r/firefox/comments/bvfqtp/_/eppxp4p?context=3
 user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 250);
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
 user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 1300);
@@ -25,7 +50,7 @@ user_pref("mousewheel.min_line_scroll_amount", 20);
 user_pref("toolkit.scrollbox.horizontalScrollDistance", 4);
 user_pref("toolkit.scrollbox.verticalScrollDistance", 5);
 
-// Get rid of menu bar and alt key annoyance
+// Get rid of menu bar and alt key annoyances
 user_pref("ui.key.menuAccessKey", 0);
 user_pref("ui.key.menuAccessKeyFocuses", false);
 
@@ -120,10 +145,10 @@ user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", 
 user_pref("security.dialog_enable_delay", 0);
 user_pref("extensions.webextensions.restrictedDomains", "accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,support.mozilla.org,sync.services.mozilla.com");
 
-/** WARNINGS ***/
-user_pref("browser.tabs.warnOnClose", false);
-user_pref("browser.tabs.warnOnCloseOtherTabs", false);
-user_pref("browser.tabs.warnOnOpen", false);
+/** WARNINGS  [SOME DISABLED AS TRIAL] ***/
+// user_pref("browser.tabs.warnOnClose", false);
+// user_pref("browser.tabs.warnOnCloseOtherTabs", false);
+// user_pref("browser.tabs.warnOnOpen", false);
 user_pref("browser.aboutConfig.showWarning", false);
 
 /** FULLSCREEN ***/
