@@ -14,6 +14,7 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("keyword.enabled", false);
 user_pref("browser.urlbar.showSearchSuggestionsFirst", false);
 user_pref("browser.newtab.extensionControlled", true); // Suppress "{Extension} is Controlling New Tab!" on startup
+user_pref("browser.startup.homepage", "moz-extension://619b8854-8a25-4a5a-a80b-d9850aee6d58/index.html"); // Let Tabliss handle the homepage
 user_pref("layout.css.backdrop-filter.enabled", true);
 user_pref("browser.compactmode.show", true);
 user_pref("browser.urlbar.suggest.calculator", true);
