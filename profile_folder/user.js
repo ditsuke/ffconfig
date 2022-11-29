@@ -185,6 +185,7 @@ user_pref("extensions.pocket.site", " ");
 user_pref("browser.download.useDownloadDir", true); // Modified to true
 user_pref("browser.download.manager.addToRecentDocs", false);
 user_pref("browser.download.hide_plugins_without_extensions", false);
+user_pref("browser.download.open_pdf_attachments_inline", true); // Open PDFs without downloading
 
 /** VARIOUS ***/
 user_pref("browser.tabs.unloadOnLowMemory", false);
