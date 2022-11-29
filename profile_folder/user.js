@@ -47,6 +47,7 @@ user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 1100);
 user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 50);
 user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", 1.5);
 user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 15000);
+user_pref("apz.overscroll.enabled", true);
 user_pref("mousewheel.min_line_scroll_amount", 20);
 user_pref("toolkit.scrollbox.horizontalScrollDistance", 4);
 user_pref("toolkit.scrollbox.verticalScrollDistance", 5);
