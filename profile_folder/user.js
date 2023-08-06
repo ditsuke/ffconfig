@@ -176,10 +176,10 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includeVisited"
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 
 /*** POCKET ***/
-user_pref("extensions.pocket.enabled", false); // Remove section to use Pocket
-user_pref("extensions.pocket.api"," ");
-user_pref("extensions.pocket.oAuthConsumerKey", " ");
-user_pref("extensions.pocket.site", " ");
+// user_pref("extensions.pocket.enabled", false); // Remove section to use Pocket
+// user_pref("extensions.pocket.api"," ");
+// user_pref("extensions.pocket.oAuthConsumerKey", " ");
+// user_pref("extensions.pocket.site", " ");
 
 /** DOWNLOADS ***/
 user_pref("browser.download.useDownloadDir", true); // Modified to true
